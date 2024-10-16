@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de correspondance - Directions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Associez les images aux concepts</h1>
+    <div class="container">
+        <div class="images">
+            <img id="img1" src="img/left-turn.png" alt="Tourner à gauche" draggable="true" ondragstart="drag(event)">
+            <img id="img2" src="img/right-turn.png" alt="Tourner à droite" draggable="true" ondragstart="drag(event)">
+            <img id="img3" src="img/straight-ahead.png" alt="Aller tout droit" draggable="true" ondragstart="drag(event)">
+            <!-- Ajoutez d'autres images ici -->
+        </div>
+
+        <div class="concepts">
+            <div id="concept1" class="droppable" ondrop="drop(event)" ondragover="allowDrop(event)">Tourner à gauche</div>
+            <div id="concept2" class="droppable" ondrop="drop(event)" ondragover="allowDrop(event)">Tourner à droite</div>
+            <div id="concept3" class="droppable" ondrop="drop(event)" ondragover="allowDrop(event)">Aller tout droit</div>
+            <!-- Ajoutez d'autres concepts ici -->
+        </div>
+    </div>
+    <button onclick="checkAnswers()">Soumettre les réponses</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
