@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f8ff;
+}
+
+h1 {
+  color: #2e8b57;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 80px); /* 10 columnas */
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #ffebcd;
+  border: 2px solid #8b4513;
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card.flipped {
+  background-color: #fafad2;
+  color: #000;
+}
+
+#reset-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4682b4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
