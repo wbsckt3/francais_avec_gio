@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Añadimos un espacio entre las columnas */
+    margin-bottom: 20px;
+}
+
+/* Ajustamos las columnas */
+.codes, .concepts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Distribuye en dos columnas */
+    gap: 20px; /* Espacio entre las tarjetas */
+    width: 45%; /* Ajustamos el ancho para que ambas columnas quepan */
+}
+
+.code-snippet, .droppable {
+    background-color: #ffffff;
+    border: 2px solid #cccccc;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.droppable {
+    background-color: #e8f5e9;
+    min-height: 100px; /* Evitamos que los cuadros se expandan mucho hacia abajo */
+    font-size: 14px;
+    word-wrap: break-word; /* Evita el desbordamiento del texto */
+    overflow: hidden;
+}
+
+.droppable:hover {
+    border-color: #66bb6a;
+    background-color: #c8e6c9;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #42a5f5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1e88e5;
+}
